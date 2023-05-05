@@ -1,32 +1,34 @@
 import React from 'react';
 import {Routes, Route, Link} from 'react-router-dom';
+
 import ColorR from './components/ColorR';
 import ColorG from './components/ColorG';
-import ColorB from './components/ColorB';
+import BuscaPessoa from './components/busca-pessoa';
 
 function App() {
+
   return (
     <>
       <header>
-        <div clas="btn-nav">
-          <Link to='/ColorR'>ColorR</Link>
+        <div className="btn-nav">
+          <Link to='/pessoa1'>ColorR</Link>
         </div>
-        <div clas="btn-nav">
-          <Link to='/ColorG'>ColorG</Link>
+        <div className="btn-nav">
+          <Link to='/pessoa2'>ColorG</Link>
         </div>
-        <div clas="btn-nav">
-          <Link to='/ColorB'>ColorB</Link>
+        <div className="btn-nav">
+          <Link to='./pessoa3'>BuscaPessoa</Link>
         </div>
       </header>
       <main>
         <Routes>
-          <Route path='/colorR' element= {<ColorR/>}/>
-          <Route path='/colorG' element= {<ColorG/>}/>
-          <Route path='/colorB' element= {<ColorB/>}/>
+          <Route path='/pessoa1' element={<ColorR/>}/>
+          <Route path='/pessoa2' element={<ColorG/>}/>
+          <Route path='/pessoa3' element={<BuscaPessoa id="1" bgc='blue'/>}/>
         </Routes>
       </main>
     </>
   );
 }
 
-export default App;
+export default App

@@ -1,10 +1,8 @@
-import React from 'react';
-
-const { buscaPessoa } = require('./busca-pessoa')
+const { BuscaPessoa } = require('./busca-pessoa.js')
 
 function ColorB(){
   return (
-      buscaPessoa(1, 'blue')
+      BuscaPessoa("1", 'blue')
   );
 }
 
