@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route path='/pessoa1' element={<ColorR/>}/>
           <Route path='/pessoa2' element={<ColorG/>}/>
-          <Route path='/pessoa3' element={<BuscaPessoa id="1" bgc='blue'/>}/>
+          <Route path='/pessoa3' element={<BuscaPessoa id={1} bgc='blue'/>}/>
         </Routes>
       </main>
     </>
