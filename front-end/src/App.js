@@ -1,7 +1,6 @@
 import React from 'react';
 import {Routes, Route, Link} from 'react-router-dom';
 
-
 import BuscaPessoa from './components/busca-pessoa';
 
 function App() {
